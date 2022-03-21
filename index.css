@@ -1,0 +1,462 @@
+/* htts://images.unplash.com/photo-161107848993-0cb964de46d6?ixlib=rb-1.2.18ixid=MnwxMjA3rDBBMMxwaG90by1wyWdlfhxBfGVufDBBfhx8&auto-format&fit=crop&w=1374&q=BD */
+
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+/* reset browser */
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "poppins", sans-serif;
+}
+
+/* HEADER SECTION */
+header{
+  background-image: url(https://images.unsplash.com/photo-1611078489935-0cb964de46d6?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8bGFwdG9wc3xlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60);
+  background-size: cover;
+  background-position: 50%;
+  height: 100vh;
+  position: relative;
+}
+
+.header-overlay{
+  background-color: rgba(0, 0, 0, 0.3);
+  position:absolute;
+  top: 0;
+  height: 80vh;
+  width: 100%;
+}
+
+.header-content-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2rem 4rem;
+}
+
+.nav-link{
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+  text-decoration: none;
+  transition: 0.5s;
+  padding:10px;
+  margin: 10px;
+}
+/* LOGO */
+.logo{
+  font-size: 30px;
+  font-weight: bold;
+  color: orangered;
+}
+
+.hero-wrapper{
+  position: relative;
+  z-index: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.profile-image{
+  width: 100px;
+  height: 100px;
+  border-radius:  50%;
+}
+
+.full-name{
+  color:  white;
+  font-size: 35px;
+  text-transform: uppercase;
+  margin: 10px;
+
+}
+
+
+.brief{
+  color: white;
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+
+}
+
+.nav-link.active {
+  color: orangered;
+}
+
+.hero-media-wrapper svg{
+  width: 30px;
+  height: 30px;
+  fill: white;
+  border: 1px solid white;
+  border-radius: 50px;
+  padding: 4px;
+  margin: 10px;
+  transition: 0.5s;
+}
+
+.btn{
+  background-color: orangered;
+  color:  white;
+  font-size: 12px;
+  font-weight: bold;
+  text-decoration: none;
+  padding: 10px 14px;
+  border-radius: 26px;
+  border: none;
+  margin: 10px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: 0.5s;
+
+}
+
+.btn:hover{
+  opacity: 0.8;
+  background: orangered;
+}
+
+.download-btn{
+  background-color: white;
+  color: orangered;
+}
+
+.download-btn:hover{
+  opacity: 0.8;
+  background: white;
+  color: white;
+}
+
+/* MAIN BODY */
+
+main{
+  margin-top: 90px;
+}
+
+.section{
+  padding: 40px;
+}
+
+.section h2{
+  font-size: 30px;
+  font-weight: bold;
+  color: orangered;
+  margin-bottom: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.about-me{
+  width: 70%;
+  margin: 0 auto;
+}
+
+.about-brief{
+  text-align: center;
+  margin-top: 20px;
+  line-height: 2;
+}
+
+/* CURRENTLY WORKING */
+
+.place-of-work-section {
+  margin: 40px 0;
+  background-color: orangered;
+  min-height: 300px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.place-of-work-section h2{
+  color: white;
+}
+
+.place-of-work-wrapper{
+  text-align: center;
+  margin: 40px 0;
+}
+
+
+.place-of-work-pill{
+  background-color: black;
+  color: white;
+  padding: 10px;
+  margin: 4px;
+  border-radius: 26px;
+  font-size: 14px;
+  transition: 1.5s;
+}
+
+/* PROJECT SECTION */
+
+/* PROJECT CARD */
+
+.project-card-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* flex-wrap: wrap; */
+  gap: 100px;
+  margin-top: 2rem;
+}
+
+.project-card{
+  padding: 10px;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  border-radius: 5px;
+}
+
+.project-card img{
+  width: 100%;
+  height: 200px;
+}
+
+.card-content{
+  width: 300px;
+  padding: 2px 16px;
+}
+
+.project-title{
+  color: orangered;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.project-brief{
+  font-size: 14px;
+}
+
+.project-links{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+
+}
+
+.project-links svg{
+  width: 20px;
+  height: 20px;
+  fill:orangered;
+}
+
+
+/* STACK SECTION */
+
+.stack-group{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10px;
+  gap: 10px;
+  flex-wrap: wrap;
+
+}
+
+/* CHROME */
+
+.stack-progress::webkit-progress-bar{
+  background-color: #cee;
+  border-radius: 100px;
+
+}
+
+.stack-progress::webkit-progress-value{
+  background-color: orangered;
+  border-radius: 100px;
+
+}
+
+/* FIREFOX */
+.stack-progress::moz-progress-bar {
+  background-color: #cee;
+  border-radius: 100px;
+}
+
+/* IFE10 */
+
+.stack-progress-wrapper label{
+  display: block;
+}
+
+/* SERVICE SECTION */
+
+.service-section{
+  margin: 40px 0;
+  min-height: 300px;
+  background-color: #ff0000;
+}
+
+.service-section h2{
+  color: #fff;
+  margin-bottom: 40px;
+
+}
+
+.service-card-wrapper{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+}
+
+.service-card {
+  background-color: #fff;
+  box-shadow: 0 4px 8p 0 rgba(0, 0, 0, 0.2);
+  transition: 00.3s;
+  border-radius: 5px;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.service-card:hover{
+  box-shadow: 0.8px 16px 0 rgba(255, 255, 255, 0.4);
+  background-color: white;
+}
+
+.service-card svg{
+  width: 30px;
+  height: 30px;
+  color:#000;
+  margin-bottom: 10px;
+
+}
+
+.service-card-content{
+  text-align: center;
+  padding: 2px 16px;
+  width: 300px;
+
+}
+
+.service-title{
+  color: #ff0000;
+  margin-bottom: 10px;
+  font-size: 17px;
+}
+
+.service-brief{
+  font-size: 14px;
+  color: #000;
+}
+
+
+
+
+
+
+
+     
+input[type=text], 
+input[type=number],
+input[type=password] {
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 2px solid #ccc;
+    box-sizing: border-box;
+}
+/* set a style for all buttons*/
+ 
+button {
+    background-color: orangered;
+    color: white;
+    padding: 15px 20px;
+    margin: 8px 0;
+    cursor: pointer;
+    width: 100%;
+}
+
+
+.signupbtn {
+  float: center;
+  width: 50%;
+}
+/*add padding to container elements*/
+
+.container {
+  padding: 16px;
+}
+/*clear floats*/
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+
+}
+
+.contact{
+
+  padding: 100px 100px ;
+  margin: 30px;
+} 
+
+ h2{
+ font-size: 30px;
+  font-weight: bold;
+  color: orangered;
+  margin-bottom: 10px 0;
+  text-transform: uppercase;
+  text-align: center;
+ } 
+
+
+
+
+.footer {
+  
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color:orangered;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  
+}
+
+
+.footer a{
+  color: white;
+  font-size: 20px;
+}
+
+.footer  i{
+  font-size: 30px;
+}
+
+
+/*styles for cancel button and signup button
+on extra small screens*/
+@media screen and (max-width: 300px) {
+ 
+  .signupbtn {
+      width: 100%;
+  }
+}
+
+
+
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+
+}
